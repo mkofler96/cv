@@ -29,12 +29,12 @@ profiles:
 education:
   - area: M.Sc. Mechanical Engineering
     institution: TU Wien
-    date_start: 2020-01-01
+    date_start: 2020-03-01
     date_end: '2023-03-22'
   - area: B.Sc. Mechanical Engineering
     institution: TU Graz
-    date_start: 2015-01-01
-    date_end: 2019-12-31
+    date_start: 2015-09-01
+    date_end: 2019-09-01
 
 work:
   - position: Siemens Mobility
@@ -42,48 +42,48 @@ work:
 
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: 2022-12-31
+    date_start: 2021-08-01
+    date_end: 2023-05-31
     summary: |2-
       Responsibilities include the creation of 3D models and 2D drawings of metro interior parts using PTC Creo, maintenance of requirements list, as well as revision and refactoring of mechanical calculation documentation
   - position: TU Wien
     company_name: Student Assistant
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
-    date_end: 2021-12-31
+    date_start: 2021-03-01
+    date_end: 2021-07-31
     summary: |
       Supervised projects done by groups of students in the course 325.041 Continuous Simulation.
   - position: Porsche Motorsport
     company_name: Intern 
     company_url: ''
     company_logo: ''
-    date_start: 2019-01-01
-    date_end: 2020-06-30
+    date_start: 2019-09-01
+    date_end: 2020-03-01
     summary: |
       Contributed to the development of software tools and methods for the Performance Formula E department.
   - position: TU Graz Racing Team Formula Student
     company_name: Subgroup Leader 
     company_url: ''
     company_logo: ''
-    date_start: 2017-01-01
-    date_end: 2019-12-31
+    date_start: 2017-09-01
+    date_end: 2019-08-31
     summary: |
       Led the Data Acquisition subgroup and developed various tools and simulations for vehicle testing and analysis.
   - position: Geier GmbH
     company_name: Intern
     company_url: ''
     company_logo: ''
-    date_start: 2017-01-01
-    date_end: 2017-01-31
+    date_start: 2017-08-01
+    date_end: 2017-08-31
     summary: |
       Involved in postprocessing of manufacturing parts, assembly of gearboxes, and creation of 3D CAD models.
   - position: Reha-Technology
     company_name: Intern
     company_url: ''
     company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2016-01-21
+    date_start: 2016-08-01
+    date_end: 2016-08-31
     summary: |
       Verified bill of materials, created 2D drawings, and communicated with suppliers.
 
