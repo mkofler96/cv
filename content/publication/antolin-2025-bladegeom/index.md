@@ -26,6 +26,8 @@ publishDate: '2025-09-12T00:00:00Z'
 publication_types:
 - article-journal
 publication: '*Computer-Aided Design*'
-url: https://inria.hal.science/hal-05244227
+links:
+- name: HAL
+  url: https://inria.hal.science/hal-05244227
 langid: english
 ---
