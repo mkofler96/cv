@@ -34,7 +34,7 @@ featured: false
 #    icon_pack: fab
 #    name: Follow
 #    url: https://twitter.com/georgecushen
-url_pdf: ''
+url_pdf: 'https://zenodo.org/records/16903138'
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
