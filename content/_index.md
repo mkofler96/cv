@@ -48,4 +48,13 @@ sections:
           - event
     design:
       view: citation
+  - block: collection
+    id: posters
+    content:
+      title: Posters
+      filters:
+        folders:
+          - poster
+    design:
+      view: citation
 ---
