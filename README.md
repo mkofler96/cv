@@ -48,8 +48,8 @@ academic import bib/bibliography.bib content/publication/ --compact
 ### Adding a project
 
 Create `content/project/<name>/index.md` (see [`content/project/kofem/index.md`](content/project/kofem/index.md))
-and optionally put a square `featured.png` thumbnail next to it. For logos, set `image.background` to the
-thumbnail's background color so the logo is shown whole and centered instead of cropped on narrow screens
+and optionally put a square `featured.png` thumbnail next to it. For logos, use a transparent `featured.png` and set
+`image.background: transparent` so the logo is shown whole and centered on the card's own color instead of cropped on narrow screens
 (handled by the card override in [`layouts/partials/views/card.html`](layouts/partials/views/card.html)).
 
 ## Deployment

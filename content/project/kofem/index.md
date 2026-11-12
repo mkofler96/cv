@@ -29,9 +29,10 @@ links:
 image:
   caption: 'KoFEM logo'
   focal_point: Center
-  # Fills the space around the thumbnail (matches featured.png's background),
-  # so the logo is shown whole instead of cropped on narrow screens.
-  background: '#0b0f14'
+  # Show the logo whole (not cropped) on narrow screens. featured.png has a
+  # transparent background, so the card's own color shows through in both
+  # light and dark mode.
+  background: transparent
 ---
 
 [KoFEM](https://kofem.org/) is an open-source, browser-based finite element solver.
