@@ -31,6 +31,15 @@ sections:
       # Education or Experience section first?
       is_education_first: false
   - block: collection
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - project
+    design:
+      view: card
+  - block: collection
     content:
       title: Publications
       text: ""

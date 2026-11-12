@@ -24,7 +24,14 @@ profiles:
     url: 'mailto:michael.kofler@live.de'
     label: E-mail Me
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/michael-kofler-6869b711b/
+    label: LinkedIn
+  - icon: brands/github
+    url: https://github.com/mkofler96
+    label: GitHub
+  - icon: brands/orcid
+    url: https://orcid.org/0009-0005-1661-3340
+    label: ORCID
 
 education:
   - area: M.Sc. Mechanical Engineering
@@ -94,3 +101,5 @@ work:
 ---
 
 I am a PhD student at TU Wien, working on shape and topology optimizing by employing neural networks as a means of geometry parametrization.
+
+I also develop [KoFEM](https://kofem.org/), an open-source finite element solver that runs entirely in the browser.

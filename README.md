@@ -1,41 +1,63 @@
-# [Hugo Résumé Theme](https://github.com/HugoBlox/theme-resume)
-To update publications run:
+# Michael Kofler – CV
 
-`pip install academic` and then 
+Source of my personal academic CV website. I am a PhD student at the
+[Institute of Lightweight Design and Structural Biomechanics](https://www.tuwien.at/mwbw/ilsb/), TU Wien,
+working on shape and topology optimization with neural-network-based geometry parametrizations.
+
+🌐 **Live site:** <https://mkofler96.github.io/cv/>
+
+[![Screenshot of the CV website](./.github/preview.jpg)](https://mkofler96.github.io/cv/)
+
+## Featured project: KoFEM
+
+[**KoFEM**](https://kofem.org/) is my open-source finite element solver that runs entirely in the browser.
+Import a STEP file, mesh it, apply supports and loads, and solve locally, with no installation and no data leaving your machine.
+
+- 🔗 Website: <https://kofem.org/>
+- 💻 Code: <https://github.com/mkofler96/KoFEM>
+
+## What's on the site
+
+- **Biography, experience & education**: [`content/authors/admin/_index.md`](content/authors/admin/_index.md)
+- **Projects**: [`content/project/`](content/project/)
+- **Publications**: [`content/publication/`](content/publication/), generated from [`bib/bibliography.bib`](bib/bibliography.bib)
+- **Conference presentations**: [`content/event/`](content/event/)
+- **Posters**: [`content/poster/`](content/poster/)
+- **Homepage layout** (section order): [`content/_index.md`](content/_index.md)
+
+## Local development
+
+The site is built with [Hugo](https://gohugo.io/) (extended, v0.136.5) and the
+[Hugo Blox résumé theme](https://github.com/HugoBlox/theme-resume).
+
+```bash
+hugo server
 ```
+
+Then open <http://localhost:1313/>.
+
+### Updating publications
+
+Add the BibTeX entry to `bib/bibliography.bib`, then run:
+
+```bash
+pip install academic
 academic import bib/bibliography.bib content/publication/ --compact
 ```
-[![Screenshot](./.github/preview.png)](https://hugoblox.com/templates/)
 
-The Hugo **Résumé Template** empowers you to easily create your job-winning online résumé, showcase your expertise, and share your social profiles to grow your audience.
+### Adding a project
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, block-based website builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+Create `content/project/<name>/index.md` (see [`content/project/kofem/index.md`](content/project/kofem/index.md))
+and optionally put a square `featured.png` thumbnail next to it. For logos, use a transparent `featured.png` and set
+`image.background: transparent` so the logo is shown whole and centered on the card's own color instead of cropped on narrow screens
+(handled by the card override in [`layouts/partials/views/card.html`](layouts/partials/views/card.html)).
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+## Deployment
 
-[Check out the latest demo](https://hugo-resume-theme.netlify.app/) of what you'll get in less than 10 minutes, or [view the showcase](https://hugoblox.com/creators/).
+Every push to `main` builds the site and deploys it to GitHub Pages via
+[`.github/workflows/publish.yaml`](.github/workflows/publish.yaml).
 
-The integrated [**Hugo Blox**](https://hugoblox.com) website builder and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+## Credits
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
-
-## We ask you, humbly, to support this open source movement
-
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
-
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
-
-### [❤️ Click here to become a GitHub Sponsor, unlocking awesome perks such as _exclusive academic templates and widgets_](https://github.com/sponsors/gcushen)
-
-## Demo credits
-
-- [Unsplash](https://unsplash.com/) images
+Based on the [Hugo Blox résumé template](https://github.com/HugoBlox/theme-resume) by George Cushen (MIT License, see [`LICENSE.md`](LICENSE.md)).
+Banner photo from [Unsplash](https://unsplash.com/).
