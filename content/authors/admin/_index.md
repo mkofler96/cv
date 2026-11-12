@@ -25,6 +25,9 @@ profiles:
     label: E-mail Me
   - icon: brands/linkedin
     url: https://www.linkedin.com/
+  - icon: brands/github
+    url: https://github.com/mkofler96
+    label: GitHub
 
 education:
   - area: M.Sc. Mechanical Engineering
@@ -94,3 +97,5 @@ work:
 ---
 
 I am a PhD student at TU Wien, working on shape and topology optimizing by employing neural networks as a means of geometry parametrization.
+
+I also develop [KoFEM](https://kofem.org/), an open-source finite element solver that runs entirely in the browser.
